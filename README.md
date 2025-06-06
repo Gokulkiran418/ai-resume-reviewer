@@ -1,12 +1,26 @@
 # AI Resume Reviewer & Job Matcher(Ongoing Project)
 
-A web app that allows users to upload resumes, receive AI-powered feedback using GPT-4o, identify skill gaps, and get job suggestions. Built with Next.js, AWS Lambda, S3, DynamoDB, and Cognito.
+A web app for resume analysis and job matching using AWS and GPT-4o.
 
-## Setup Instructions
-1. Clone the repo: `git clone https://github.com/your-username/ai-resume-reviewer.git`
-2. Follow the steps in `/docs` for AWS and OpenAI setup.
+## Technology Stack
+- **Frontend**: Next.js (TypeScript, Tailwind CSS), AWS Amplify
+- **Backend**: AWS Lambda (Python 3.12), API Gateway
+- **Storage**: Amazon S3
+- **Database**: Amazon DynamoDB
+- **Authentication**: Amazon Cognito
+- **AI**: OpenAI GPT-4o API
+- **Libraries**: PyPDF2, Boto3, OpenAI Python SDK
 
-## Folder Structure
-- `/frontend`: Next.js frontend code
-- `/backend`: AWS Lambda functions
-- `/docs`: Project documentation
+## Setup
+1. **Frontend**:
+   - `cd frontend && npm install`
+   - Install AWS Amplify: `npm install @aws-amplify/auth @aws-amplify/ui-react`
+2. **Backend**:
+   - `cd backend && python3 -m venv venv && source venv/bin/activate`
+   - Install dependencies: `pip install boto3 PyPDF2 openai`
+3. Install AWS CLI: `pip install awscli`
+4. Get OpenAI API key from [OpenAI](https://platform.openai.com).
+
+## Next Steps
+- Configure AWS services (Step 4).
+- Develop frontend and backend (Steps 5-7).
